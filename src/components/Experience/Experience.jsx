@@ -22,8 +22,8 @@ export default function Experience() {
     return (
         <>
             <div className={style.wrapper}>
-                <h2 className={style.title}>What I do</h2>
-                <p>as a fullstack</p>
+                <h2 className={style.title}>Что я делаю</h2>
+                <p>как полный стек</p>
                 <div className={style.exp_items}>
                     {arr_experience.map((el) => (
                         <div key={el.id} className={style.border_item}>

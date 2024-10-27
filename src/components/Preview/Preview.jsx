@@ -28,20 +28,40 @@ export default function Preview() {
 		{
 			id: 1,
 			name: 'Frontend',
-			description: 'Briefing, wireframe, UX, UI and branding.',
+			description: [
+				'JavaScript',
+				'TypeScript',
+				'React',
+				'Next.js',
+				'Redux Toolkit',
+				'Redux Toolkit Query',
+				'Material UI',
+				'Mantine',
+				'HTML',
+				'CSS',
+				'SCSS',
+				'Framer motion',
+				'Styled components',
+			],
 			roles_icon: style.icon_1,
+			also: null,
+			additionally: [],
 		},
 		{
 			id: 2,
 			name: 'Backend',
-			description: 'Briefing, wireframe, UX, UI and branding.',
+			description: ['JavaScript', 'TypeScript', 'Node.js', 'Express', ' Jest'],
 			roles_icon: style.icon_2,
+			also: null,
+			additionally: [],
 		},
 		{
 			id: 3,
-			name: 'Database Architect',
-			description: 'Briefing, wireframe, UX, UI and branding.',
+			name: 'Архитектор баз данных',
+			description: ['MySQL', 'PostgreSQL'],
 			roles_icon: style.icon_3,
+			also: 'а также',
+			additionally: ['Mocha', 'Jest', 'Git', 'Figma'],
 		},
 	]
 
@@ -56,15 +76,16 @@ export default function Preview() {
 				>
 					<div className={style.about_me}>
 						<motion.p custom={1} variants={animation}>
-							Hi, my name is Alina Falei, and I
+							Привет, меня зовут Алина Фалей, и я
 						</motion.p>
 						<motion.h1 custom={2} variants={animation}>
 							Full Stack Разработчик
 						</motion.h1>
 						<motion.p custom={3} variants={animation}>
-							focus in harnessing the power of Next.js with Express.js and REST
-							API to craft dynamic web applications. creating seamless user
-							experiences that bring ideas to life.
+							который, сосредоточен на использовании возможностей Next.js с
+							Express.js и REST API для создания динамических веб-приложений,
+							создавая бесперебойный пользовательский интерфейс и воплощающий
+							свои идеи в жизнь.
 						</motion.p>
 					</div>
 					<motion.img custom={4} variants={animation} src={foto} alt='foto' />
@@ -86,15 +107,19 @@ export default function Preview() {
 								<div className={el.roles_icon}></div>
 								<div className={style.info_item}>
 									<h3 className={style.roles_name}>{el.name}</h3>
-									<p>{el.description}</p>
 									<div className={style.line}></div>
-									<ul>
-										<h3>{'I\'ve had experiences with'}</h3>
-										<li>Firebase Database</li>
-										<li>MySQL Database</li>
-										<li>GIT, GitHub, Bitbucket</li>
-										<li>Figma, Adobe XD, Sketch</li>
-									</ul>
+									<h3>Я работала с</h3>
+									{el.description.map((elem, i) => (
+										<ul key={i}>
+											<li>{elem}</li>
+										</ul>
+									))}
+									<h3 className={style.roles_name}>{el.also}</h3>
+									{el.additionally.map((element, i) => (
+										<ul key={i}>
+											<li>{element}</li>
+										</ul>
+									))}
 								</div>
 							</motion.div>
 						))}

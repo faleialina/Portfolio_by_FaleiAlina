@@ -30,9 +30,9 @@ export default function About() {
             viewport={{ once: true }}
             className={style.wrapper}>
             <div className={style.info}>
-                <motion.h2 custom={1} variants={animation}>Get in touch with me</motion.h2>
-                <motion.p custom={2} variants={animation}>I am a passionate Front-end developer currently in my third year of studying Informatics/Computer Science at Siliwangi University. Feel free to explore my portfolio to see the diverse projects I've completed. If you're interested in my work and would like me to bring your project to life, don't hesitate to reach out to me!</motion.p>
-                <motion.button custom={3} variants={animation}>Contact me</motion.button>
+                <motion.h2 custom={1} variants={animation}>Свяжитесь со мной</motion.h2>
+                <motion.p custom={2} variants={animation}>Я мотивированный и постоянно развивающийся фронтенд-разработчик. Не стесняйтесь заглянуть в мое портфолио, чтобы ознакомиться с разнообразными проектами, которые я завершила. Если Вас заинтересовала моя работа и Вы хотите, чтобы я воплотила Ваш проект в жизнь, не стесняйтесь связаться со мной!</motion.p>
+                <motion.button custom={3} variants={animation}>Мои контакты</motion.button>
 
             </div>
         </motion.div>

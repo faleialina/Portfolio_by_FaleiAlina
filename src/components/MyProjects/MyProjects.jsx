@@ -1,5 +1,5 @@
 import style from './projects.module.css';
-import img from './assets/image.svg';
+import img from './assets/coffeine.png';
 
 export default function MyProjects() {
 
@@ -14,7 +14,7 @@ export default function MyProjects() {
     return <>
         <div className={style.wrapper}>
             <h2>Мои проекты</h2>
-            <p>Some Projects that i’ve done with a year experiences</p>
+            <p>Вот несколько проектов, которые я реализовала</p>
             <div className={style.whirligig_projects}>
                 {arr_projects.map((el) => <div key={el.id} className={style.project_item}>
                     <img className={el.img} src={img} alt="img" />
