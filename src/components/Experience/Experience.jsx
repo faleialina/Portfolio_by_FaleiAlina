@@ -34,7 +34,7 @@ export default function Experience() {
 	]
 
 	return (
-		<>
+		<section>
 			<div className={style.wrapper}>
 				<h2 className={style.title}>Что я делаю</h2>
 				<p>как полный стек</p>
@@ -62,6 +62,6 @@ export default function Experience() {
 					/>
 				</motion.div>
 			</div>
-		</>
+		</section>
 	)
 }

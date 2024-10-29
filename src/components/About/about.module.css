@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 300px auto;
+    margin: 250px auto;
     max-width: 1335px;
 
     .info {
@@ -10,22 +10,8 @@
         max-width: 1025px;
         margin: auto;
 
-        & h2 {
-            font-family: Poppins;
-            font-size: 150px;
-            font-weight: 800;
-            text-align: center;
-            line-height: 150px;
-            color: #000000;
-        }
-
         p {
-            font-family: Poppins;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 33px;
             text-align: center;
-
         }
 
         button {
@@ -42,4 +28,21 @@
         }
     }
 
+}
+
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        & h1 {
+            font-size: 70px;
+        }
+
+        & .info h2 {
+            font-size: 44px;
+        }
+
+        & p {
+            font-size: 18px;
+        }
+    }
 }

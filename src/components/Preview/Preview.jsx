@@ -66,7 +66,7 @@ export default function Preview() {
 	]
 
 	return (
-		<>
+		<section>
 			<div className={style.wrapper}>
 				<motion.div
 					initial='hiddenVertical'
@@ -124,9 +124,8 @@ export default function Preview() {
 							</motion.div>
 						))}
 					</div>
-					<div></div>
 				</motion.div>
 			</div>
-		</>
+		</section>
 	)
 }

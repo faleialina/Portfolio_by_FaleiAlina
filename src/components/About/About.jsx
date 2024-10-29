@@ -29,7 +29,7 @@ export default function About() {
             footer.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    return <>
+    return <section>
         <motion.div
             initial='hiddenHorizontal'
             whileInView='visibleHorizontal'
@@ -44,5 +44,5 @@ export default function About() {
 
             </div>
         </motion.div>
-    </>
+    </section>
 }

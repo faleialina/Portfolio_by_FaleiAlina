@@ -5,10 +5,8 @@
 	align-items: center;
 
 	.title {
-		font: 800 30px Poppins;
-		color: #000000;
+		font-size: 28px;
 	}
-
 	.line {
 		border: 2px solid #000000;
 		width: 200px;
