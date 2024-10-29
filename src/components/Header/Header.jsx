@@ -9,7 +9,7 @@ export default function Header() {
 
 	useEffect(() => {
 		// на подумать
-		// document.querySelector('html').style = `overflow: ${isshowBurger ? 'hidden' : 'scroll'}`
+		document.querySelector('html').style = `overflow: ${isshowBurger ? 'hidden' : ''}`
 	}, [isshowBurger])
 
 	return (
