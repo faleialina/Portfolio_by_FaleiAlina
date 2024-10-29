@@ -96,7 +96,7 @@ export default function Preview() {
 					viewport={{ once: true }}
 					className={style.skills}
 				>
-					<div className={style.roles}>
+					<div id='arrRoles' className={style.roles}>
 						{arr_roles.map(el => (
 							<motion.div
 								custom={4 + el.id}
