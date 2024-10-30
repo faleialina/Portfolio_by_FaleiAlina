@@ -1,63 +1,94 @@
-import img from './assets/coffeine.png'
+import img2 from './assets/bistro.png'
+import img1 from './assets/caffeine.png'
+import img3 from './assets/education.png'
 import style from './projects.module.css'
 
 export default function MyProjects() {
 	const arr_projects = [
 		{
 			id: 1,
-			name: 'ReDesign Apps',
-			environment: ['#javascript', '#html', '#css'],
+			name: 'Сaffeine',
+			environment: [
+				'typescript',
+				'html',
+				'react',
+				'styled components',
+				'framer motion',
+			],
 			description:
-				'lorem ipsum dolor si amet adiran jamet aku ganteng aku adalah bukan jamet amar jamet aku bukan jamet a lorem ipsumd olor si amet jame tjsajklhnsajhkl',
-			img: style.img_item,
+				'Проект демонстрирует применение современных подходов к разработке интерфейсов с использованием React и реализует основные функциональные требования для создания привлекательного сайта для пользователей',
+			img: img1,
+			style_img: style.img_item_1,
 		},
 		{
 			id: 2,
-			name: 'ReDesign Apps',
-			environment: ['#javascript', '#html', '#css'],
+			name: 'BistroBliss',
+			environment: ['javascript', 'html', 'scss', 'react', 'next.js'],
 			description:
-				'lorem ipsum dolor si amet adiran jamet aku ganteng aku adalah bukan jamet amar jamet aku bukan jamet a lorem ipsumd olor si amet jame tjsajklhnsajhkl',
-			img: style.img_item,
+				'Многостраничное веб-приложение для ресторана, где пользователи могут ознакомиться с меню и услугами заведения. Проект охватывает всю необходимую функциональность для ресторана, делая акцент на визуальной составляющей',
+			img: img2,
+			style_img: style.img_item_2,
 		},
 		{
 			id: 3,
-			name: 'ReDesign Apps',
-			environment: ['#javascript', '#html', '#css'],
+			name: 'EducationPlatform',
+			environment: [
+				'typescript',
+				'node.js',
+				'express',
+				'cors',
+				'jwt-token',
+				'react',
+				'html',
+				'css',
+			],
 			description:
-				'lorem ipsum dolor si amet adiran jamet aku ganteng aku adalah bukan jamet amar jamet aku bukan jamet a lorem ipsumd olor si amet jame tjsajklhnsajhkl',
-			img: style.img_item,
+				'Данный проект представляет собой платформу для онлайн-обучения, позволяющую пользователям изучать различные предметы через веб-интерфейс. Он ориентирован на предложении интерактивных курсов с визуально привлекательным дизайном',
+			img: img3,
+			style_img: style.img_item_3,
 		},
 		{
 			id: 4,
-			name: 'ReDesign Apps',
-			environment: ['#javascript', '#html', '#css'],
+			name: 'WebPage',
+			environment: ['javascript', 'html', 'css', 'react'],
 			description:
-				'lorem ipsum dolor si amet adiran jamet aku ganteng aku adalah bukan jamet amar jamet aku bukan jamet a lorem ipsumd olor si amet jame tjsajklhnsajhkl',
-			img: style.img_item,
+				'Проект представляет собой веб-приложение для платформы, связанной с азартными играми в форме рекламной страницы c использованием анимации',
+			img: img1,
+			style_img: style.img_item_1,
 		},
 		{
 			id: 5,
-			name: 'ReDesign Apps',
-			environment: ['#javascript', '#html', '#css'],
+			name: 'Weather-dashboard',
+			environment: ['typescript', 'html', 'css', 'react', 'axios', 'api'],
 			description:
-				'lorem ipsum dolor si amet adiran jamet aku ganteng aku adalah bukan jamet amar jamet aku bukan jamet a lorem ipsumd olor si amet jame tjsajklhnsajhkl',
-			img: style.img_item,
+				'Веб-приложение для отображения текущей погоды в заданном пользователем городе. Результаты отображаются на экране, включая температуру, влажность, скорость ветра и описание погоды. Также предусмотрена возможность сброса введенных данных и повторного поиска.',
+			img: img1,
+			style_img: style.img_item_1,
 		},
 		{
 			id: 6,
-			name: 'ReDesign Apps',
-			environment: ['#javascript', '#html', '#css'],
+			name: 'Vacancies',
+			environment: [
+				'javascript',
+				'html',
+				'scss',
+				'react',
+				'material ui',
+				'localstorage',
+			],
 			description:
-				'lorem ipsum dolor si amet adiran jamet aku ganteng aku adalah bukan jamet amar jamet aku bukan jamet a lorem ipsumd olor si amet jame tjsajklhnsajhkl',
-			img: style.img_item,
+				'Проект представляет собой веб-приложение, предназначенное для поиска и управления вакансиями. Пользователи могут искать вакансии, добавлять их в список избранного, просматривать подробности о каждой вакансии, а также управлять своим списком избранных позиций',
+			img: img1,
+			style_img: style.img_item_1,
 		},
 		{
 			id: 7,
-			name: 'ReDesign Apps',
-			environment: ['#javascript', '#html', '#css'],
+			name: 'Presentation-adaptive',
+			environment: ['javascript', 'html', 'css', 'react'],
 			description:
-				'lorem ipsum dolor si amet adiran jamet aku ganteng aku adalah bukan jamet amar jamet aku bukan jamet a lorem ipsumd olor si amet jame tjsajklhnsajhkl',
-			img: style.img_item,
+				'Данный проект является веб-приложением, разработанным с целью предоставления пользователю возможности взаимодействовать с функциональностью, связанной с демо-версией услуг компании',
+			img: img1,
+			style_img: style.img_item_1,
 		},
 	]
 
@@ -69,11 +100,11 @@ export default function MyProjects() {
 				<div className={style.whirligig_projects}>
 					{arr_projects.map(el => (
 						<div key={el.id} className={style.project_item}>
-							<img className={el.img} src={img} alt='img' />
+							<img className={el.style_img} src={el.img} alt='img' />
 							<div className={style.environment}>
 								{el.environment.map((elem, i) => (
 									<div key={i} className={style.env_item}>
-										<p>{elem}</p>
+										<p>{`#${elem}`}</p>
 									</div>
 								))}
 							</div>

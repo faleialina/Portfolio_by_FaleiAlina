@@ -79,13 +79,10 @@ export default function Preview() {
 							Привет, меня зовут Алина Фалей, и я
 						</motion.p>
 						<motion.h1 custom={2} variants={animation}>
-							Full Stack Разработчик
+							Full Stack разработчик
 						</motion.h1>
 						<motion.p custom={3} variants={animation}>
-							который, сосредоточен на использовании возможностей Next.js с
-							Express.js и REST API для создания динамических веб-приложений,
-							создавая бесперебойный пользовательский интерфейс и воплощающий
-							свои идеи в жизнь.
+						Создаю динамические и интуитивно понятные веб-приложения.  Я использую сочетание Next.js, Express.js и REST API для создания высокоэффективных и удобных в использовании интерфейсов, воплощая в жизнь сложные и интересные идеи.
 						</motion.p>
 					</div>
 					<motion.img custom={4} variants={animation} src={foto} alt='foto' />
