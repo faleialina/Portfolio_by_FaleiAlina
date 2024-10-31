@@ -1,4 +1,5 @@
 import img2 from './assets/bistro.png'
+import img4 from './assets/breedShow.png'
 import img1 from './assets/caffeine.png'
 import img3 from './assets/education.png'
 import style from './projects.module.css'
@@ -8,6 +9,7 @@ export default function MyProjects() {
 		{
 			id: 1,
 			name: 'Сaffeine',
+			link: 'https://github.com/faleialina/caffeineStyle',
 			environment: [
 				'typescript',
 				'html',
@@ -23,6 +25,7 @@ export default function MyProjects() {
 		{
 			id: 2,
 			name: 'BistroBliss',
+			link: 'https://github.com/faleialina/BistroBliss',
 			environment: ['javascript', 'html', 'scss', 'react', 'next.js'],
 			description:
 				'Многостраничное веб-приложение для ресторана, где пользователи могут ознакомиться с меню и услугами заведения. Проект охватывает всю необходимую функциональность для ресторана, делая акцент на визуальной составляющей',
@@ -32,6 +35,7 @@ export default function MyProjects() {
 		{
 			id: 3,
 			name: 'EducationPlatform',
+			link: 'https://github.com/faleialina/EducationPlatform',
 			environment: [
 				'typescript',
 				'node.js',
@@ -49,16 +53,18 @@ export default function MyProjects() {
 		},
 		{
 			id: 4,
-			name: 'WebPage',
-			environment: ['javascript', 'html', 'css', 'react'],
+			name: 'breed.show',
+			link: 'https://breed.show/',
+			environment: ['typescript', 'html', 'styled components', 'react'],
 			description:
-				'Проект представляет собой веб-приложение для платформы, связанной с азартными играми в форме рекламной страницы c использованием анимации',
-			img: img1,
-			style_img: style.img_item_1,
+				'Проект представляет собой веб-приложение для заводчиков животных, предназначенное для управления питомниками и взаимодействия с клиентами.  Пользователи могут вести учет животных, включая родословные, записи о здоровье и вакцинации.  Система позволяет управлять продажами,  записывать информацию о клиентах и их питомцах, а также планировать вязки и следить за потомством.  Приложение может включать функции создания и рассылки рекламных материалов,  управление заказами на товары для животных и интеграцию с ветеринарными клиниками.',
+			img: img4,
+			style_img: style.img_item_4,
 		},
 		{
 			id: 5,
 			name: 'Weather-dashboard',
+			link: '',
 			environment: ['typescript', 'html', 'css', 'react', 'axios', 'api'],
 			description:
 				'Веб-приложение для отображения текущей погоды в заданном пользователем городе. Результаты отображаются на экране, включая температуру, влажность, скорость ветра и описание погоды. Также предусмотрена возможность сброса введенных данных и повторного поиска.',
@@ -68,6 +74,7 @@ export default function MyProjects() {
 		{
 			id: 6,
 			name: 'Vacancies',
+			link: '',
 			environment: [
 				'javascript',
 				'html',
@@ -84,6 +91,7 @@ export default function MyProjects() {
 		{
 			id: 7,
 			name: 'Presentation-adaptive',
+			link: '',
 			environment: ['javascript', 'html', 'css', 'react'],
 			description:
 				'Данный проект является веб-приложением, разработанным с целью предоставления пользователю возможности взаимодействовать с функциональностью, связанной с демо-версией услуг компании',
@@ -110,7 +118,15 @@ export default function MyProjects() {
 							</div>
 							<h3 className={style.name_item}>{el.name}</h3>
 							<p className={style.text_item}>{el.description}</p>
-							<p className={style.view}>see project →</p>
+							{/* <p className={style.view}>see project →</p> */}
+							<a
+								href={el.link}
+								target='_blank'
+								rel='noopener noreferrer'
+								className={style.view}
+							>
+								see project →
+							</a>
 						</div>
 					))}
 				</div>
