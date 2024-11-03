@@ -1,36 +1,37 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  max-width: 1335px;
-  background: #F9F5F2;
-  overflow-x: hidden;
-  margin: auto;
-  padding: 0 30px;
+	max-width: 1335px;
+	background: #f9f5f2;
+	overflow-x: hidden;
+	margin: auto;
+	padding: 0 30px;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-p, ul li {
-  font: 400 22px Montserrat;
-  color: #000000;
+p,
+ul li {
+	font: 400 22px Montserrat;
+	color: #000000;
 }
 
 h1 {
-  font: 400 88px Montserrat;
+	font: 400 88px Montserrat;
 }
 
 h2 {
-  font: 800 80px Montserrat;
-  color: #8a4802;
-  text-align: center;
+	font: 800 80px Montserrat;
+	color: #5e2f22;
+	text-align: center;
 }
 h2 {
-  font: 800 80px Montserrat;
-  color: #8a4802;
+	font: 800 80px Montserrat;
+	color: #5e2f22;
 }

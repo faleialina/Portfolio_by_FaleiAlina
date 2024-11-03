@@ -3,7 +3,7 @@
 
 	h2 {
 		text-align: center;
-		color: #8a4802;
+		color: #5e2f22;
 	}
 
 	p {
@@ -100,12 +100,12 @@
 				left: 0;
 				right: 0;
 				text-align: center;
-				color: #007bff;
+				color: #5e2f22;
 				text-decoration: none;
 			}
 
 			.view:hover {
-				text-decoration: underline; /* Подчеркивание при наведении */
+				text-decoration: underline;
 			}
 		}
 	}
