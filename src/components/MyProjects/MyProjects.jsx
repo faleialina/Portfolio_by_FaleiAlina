@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import img6 from './assets/JWT-Mobile.png'
 import img5 from './assets/Weather.png'
 import img2 from './assets/bistro.png'
@@ -113,7 +114,11 @@ export default function MyProjects() {
 				<p>Вот несколько проектов, которые я реализовала</p>
 				<div className={style.whirligig_projects}>
 					{arr_projects.map(el => (
-						<div key={el.id} className={style.project_item}>
+						<motion.div
+							whileHover={{ scale: 1.02 }}
+							key={el.id}
+							className={style.project_item}
+						>
 							<img className={el.style_img} src={el.img} alt='img' />
 							<div className={style.environment}>
 								{el.environment.map((elem, i) => (
@@ -132,7 +137,7 @@ export default function MyProjects() {
 							>
 								Посмотреть →
 							</a>
-						</div>
+						</motion.div>
 					))}
 				</div>
 			</div>
