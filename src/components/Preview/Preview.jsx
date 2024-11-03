@@ -32,10 +32,12 @@ export default function Preview() {
 				'JavaScript',
 				'TypeScript',
 				'React',
+				'React Native',
 				'Next.js',
 				'Redux Toolkit',
 				'Redux Toolkit Query',
 				'Material UI',
+				'Ant Design',
 				'Mantine',
 				'HTML',
 				'CSS',
@@ -50,7 +52,14 @@ export default function Preview() {
 		{
 			id: 2,
 			name: 'Backend',
-			description: ['JavaScript', 'TypeScript', 'Node.js', 'Express', ' Jest'],
+			description: [
+				'JavaScript',
+				'TypeScript',
+				'Node.js',
+				'Express',
+				' Jest',
+				'Swagger',
+			],
 			roles_icon: style.icon_2,
 			also: null,
 			additionally: [],
@@ -58,7 +67,7 @@ export default function Preview() {
 		{
 			id: 3,
 			name: 'Архитектор баз данных',
-			description: ['MySQL', 'PostgreSQL'],
+			description: ['MySQL', 'PostgreSQL', 'MongoDB'],
 			roles_icon: style.icon_3,
 			also: 'а также',
 			additionally: ['Mocha', 'Jest', 'Git', 'Figma'],
@@ -82,7 +91,10 @@ export default function Preview() {
 							Full Stack разработчик
 						</motion.h1>
 						<motion.p custom={3} variants={animation}>
-						Создаю динамические и интуитивно понятные веб-приложения.  Я использую сочетание Next.js, Express.js и REST API для создания высокоэффективных и удобных в использовании интерфейсов, воплощая в жизнь сложные и интересные идеи.
+							Создаю динамические и интуитивно понятные веб-приложения. Я
+							использую сочетание Next.js, Express.js и REST API для создания
+							высокоэффективных и удобных в использовании интерфейсов, воплощая
+							в жизнь сложные и интересные идеи.
 						</motion.p>
 					</div>
 					<motion.img custom={4} variants={animation} src={foto} alt='foto' />

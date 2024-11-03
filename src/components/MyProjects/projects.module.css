@@ -1,12 +1,7 @@
 .wrapper {
 	margin: 0 0 200px;
-	/* max-width: 1335px; */
 
 	h2 {
-		/* font-family: Poppins;
-        font-size: 44px;
-        font-weight: 800;
-        line-height: 100px; */
 		text-align: center;
 		color: #8a4802;
 	}
@@ -22,6 +17,7 @@
 		justify-content: center;
 
 		.project_item {
+			position: relative;
 			margin-top: 80px;
 			padding: 20px;
 			border: 2px solid #000000;
@@ -40,7 +36,6 @@
 			.img_item_6,
 			.img_item_7 {
 				width: 320px;
-				height: 200px;
 				background-size: contain;
 				background-repeat: no-repeat;
 				border-radius: 12px;
@@ -90,12 +85,27 @@
 			}
 
 			.name_item {
-				font-family: Poppins;
-				font-size: 18px;
-				font-weight: 500;
+				font: 600 18px Montserrat;
 				line-height: 22.63px;
 				text-align: left;
 				color: #000000;
+			}
+
+			.text_item {
+				margin-bottom: 30px;
+			}
+			.view {
+				position: absolute;
+				bottom: 10px;
+				left: 0;
+				right: 0;
+				text-align: center;
+				color: #007bff;
+				text-decoration: none;
+			}
+
+			.view:hover {
+				text-decoration: underline; /* Подчеркивание при наведении */
 			}
 		}
 	}

@@ -1,7 +1,10 @@
+import img6 from './assets/JWT-Mobile.png'
+import img5 from './assets/Weather.png'
 import img2 from './assets/bistro.png'
 import img4 from './assets/breedShow.png'
 import img1 from './assets/caffeine.png'
 import img3 from './assets/education.png'
+import img7 from './assets/toDo.png'
 import style from './projects.module.css'
 
 export default function MyProjects() {
@@ -9,7 +12,7 @@ export default function MyProjects() {
 		{
 			id: 1,
 			name: 'Сaffeine',
-			link: 'https://github.com/faleialina/caffeineStyle',
+			link: 'https://new-caffeine-5ynp.vercel.app/',
 			environment: [
 				'typescript',
 				'html',
@@ -18,17 +21,17 @@ export default function MyProjects() {
 				'framer motion',
 			],
 			description:
-				'Проект демонстрирует применение современных подходов к разработке интерфейсов с использованием React и реализует основные функциональные требования для создания привлекательного сайта для пользователей',
+				'Интуитивно понятная навигация и современный дизайн делают этот проект не только полезным инструментом, но и эстетически приятным ресурсом. Использование React позволяет создавать динамичные и адаптивные компоненты, которые легко масштабируются и поддерживаются, что открывает новые горизонты для дальнейшего развития.',
 			img: img1,
 			style_img: style.img_item_1,
 		},
 		{
 			id: 2,
 			name: 'BistroBliss',
-			link: 'https://github.com/faleialina/BistroBliss',
+			link: 'https://main--clinquant-marzipan-3e0214.netlify.app/',
 			environment: ['javascript', 'html', 'scss', 'react', 'next.js'],
 			description:
-				'Многостраничное веб-приложение для ресторана, где пользователи могут ознакомиться с меню и услугами заведения. Проект охватывает всю необходимую функциональность для ресторана, делая акцент на визуальной составляющей',
+				'Разработанное с использованием современных веб-технологий, это многостраничное приложение предоставляет все необходимые инструменты для онлайн-представления ресторана.  Визуальная привлекательность и удобство использования обеспечивают комфортный опыт для пользователей.',
 			img: img2,
 			style_img: style.img_item_2,
 		},
@@ -47,7 +50,7 @@ export default function MyProjects() {
 				'css',
 			],
 			description:
-				'Данный проект представляет собой платформу для онлайн-обучения, позволяющую пользователям изучать различные предметы через веб-интерфейс. Он ориентирован на предложении интерактивных курсов с визуально привлекательным дизайном',
+				'Этот проект является онлайн-платформой для обучения, предоставляющей пользователям возможность изучать разнообразные предметы через удобный веб-интерфейс. Он акцентирует внимание на интерактивных курсах, оформленных в эстетически привлекательном дизайне.',
 			img: img3,
 			style_img: style.img_item_3,
 		},
@@ -64,39 +67,42 @@ export default function MyProjects() {
 		{
 			id: 5,
 			name: 'Weather-dashboard',
-			link: '',
+			link: 'https://weather-dashboard-zeta-gules.vercel.app/',
 			environment: ['typescript', 'html', 'css', 'react', 'axios', 'api'],
 			description:
-				'Веб-приложение для отображения текущей погоды в заданном пользователем городе. Результаты отображаются на экране, включая температуру, влажность, скорость ветра и описание погоды. Также предусмотрена возможность сброса введенных данных и повторного поиска.',
-			img: img1,
-			style_img: style.img_item_1,
+				'Веб-приложение, которое показывает текущую погоду в городе, указанном пользователем. На экране отображаются результаты, включая температуру, влажность, скорость ветра и описание погодных условий. Также есть функция сброса введенных данных и повторного поиска.',
+			img: img5,
+			style_img: style.img_item_5,
 		},
 		{
 			id: 6,
-			name: 'Vacancies',
-			link: '',
-			environment: [
-				'javascript',
-				'html',
-				'scss',
-				'react',
-				'material ui',
-				'localstorage',
-			],
+			name: 'JWT-Mobile',
+			link: 'https://github.com/faleialina/JWT-Mobile',
+			environment: ['javascript', 'react-native'],
 			description:
-				'Проект представляет собой веб-приложение, предназначенное для поиска и управления вакансиями. Пользователи могут искать вакансии, добавлять их в список избранного, просматривать подробности о каждой вакансии, а также управлять своим списком избранных позиций',
-			img: img1,
-			style_img: style.img_item_1,
+				'Проект представляет собой удобное приложение для задач todo, призванное оптимизировать и улучшить ваш ежедневный опыт управления задачами.',
+			img: img6,
+			style_img: style.img_item_6,
 		},
 		{
 			id: 7,
-			name: 'Presentation-adaptive',
-			link: '',
-			environment: ['javascript', 'html', 'css', 'react'],
+			name: 'toDo-Next-Nest',
+			link: 'https://github.com/faleialina/toDo-Next-Nest',
+			environment: [
+				'typescript',
+				'html',
+				'scss',
+				'react',
+				'next.js',
+				'axios',
+				'node.js',
+				'nest',
+				'pg',
+			],
 			description:
-				'Данный проект является веб-приложением, разработанным с целью предоставления пользователю возможности взаимодействовать с функциональностью, связанной с демо-версией услуг компании',
-			img: img1,
-			style_img: style.img_item_1,
+				'Интуитивно понятный интерфейс, стильный дизайн и плавная работа приложения позволят с лёгкостью управлять своим списком добрых дел.  Добавляйте задачи, отмечат выполненные, редактируйте и удаляйте их — всё происходит в несколько кликов. Авторизованный пользователь может добавлять людей в друзья и смотреть их список добрых дел.  Система регистрации и авторизации обеспечивает безопасность Ваших данных и конфиденциальность.',
+			img: img7,
+			style_img: style.img_item_7,
 		},
 	]
 
@@ -118,14 +124,13 @@ export default function MyProjects() {
 							</div>
 							<h3 className={style.name_item}>{el.name}</h3>
 							<p className={style.text_item}>{el.description}</p>
-							{/* <p className={style.view}>see project →</p> */}
 							<a
 								href={el.link}
 								target='_blank'
 								rel='noopener noreferrer'
 								className={style.view}
 							>
-								see project →
+								Посмотреть →
 							</a>
 						</div>
 					))}
