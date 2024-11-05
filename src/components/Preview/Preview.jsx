@@ -88,7 +88,7 @@ export default function Preview() {
 							Привет, меня зовут Алина Фалей, и я
 						</motion.p>
 						<motion.h1 custom={2} variants={animation}>
-							Full Stack разработчик
+							FullStack разработчик
 						</motion.h1>
 						<motion.p custom={3} variants={animation}>
 							Создаю динамические и интуитивно понятные веб-приложения. Я
