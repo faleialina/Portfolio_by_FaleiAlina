@@ -18,7 +18,7 @@ a {
 
 p,
 ul li {
-	font: 400 22px Montserrat;
+	font: 400 18px Montserrat;
 	color: #000000;
 }
 
@@ -30,8 +30,4 @@ h2 {
 	font: 800 80px Montserrat;
 	color: #5e2f22;
 	text-align: center;
-}
-h2 {
-	font: 800 80px Montserrat;
-	color: #5e2f22;
 }

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import img6 from './assets/JWT-Mobile.png'
 import img5 from './assets/Weather.png'
 import img2 from './assets/bistro.png'
@@ -22,7 +23,7 @@ export default function MyProjects() {
 				'framer motion',
 			],
 			description:
-				'Интуитивно понятная навигация и современный дизайн делают этот проект не только полезным инструментом, но и эстетически приятным ресурсом. Использование React позволяет создавать динамичные и адаптивные компоненты, которые легко масштабируются и поддерживаются, что открывает новые горизонты для дальнейшего развития.',
+				'Интуитивно понятная навигация и современный дизайн делают этот проект не только полезным инструментом, но и эстетически приятным ресурсом. ',
 			img: img1,
 			style_img: style.img_item_1,
 		},
@@ -32,7 +33,7 @@ export default function MyProjects() {
 			link: 'https://main--clinquant-marzipan-3e0214.netlify.app/',
 			environment: ['javascript', 'html', 'scss', 'react', 'next.js'],
 			description:
-				'Разработанное с использованием современных веб-технологий, это многостраничное приложение предоставляет все необходимые инструменты для онлайн-представления ресторана.  Визуальная привлекательность и удобство использования обеспечивают комфортный опыт для пользователей.',
+				'Это многостраничное приложение предоставляет все необходимые инструменты для онлайн-представления ресторана.',
 			img: img2,
 			style_img: style.img_item_2,
 		},
@@ -51,7 +52,7 @@ export default function MyProjects() {
 				'css',
 			],
 			description:
-				'Этот проект является онлайн-платформой для обучения, предоставляющей пользователям возможность изучать разнообразные предметы через удобный веб-интерфейс. Он акцентирует внимание на интерактивных курсах, оформленных в эстетически привлекательном дизайне.',
+				'Этот проект является онлайн-платформой для обучения, предоставляющей пользователям возможность изучать разнообразные предметы через удобный веб-интерфейс.',
 			img: img3,
 			style_img: style.img_item_3,
 		},
@@ -61,7 +62,7 @@ export default function MyProjects() {
 			link: 'https://breed.show/',
 			environment: ['typescript', 'html', 'styled components', 'react'],
 			description:
-				'Проект представляет собой веб-приложение для заводчиков животных, предназначенное для управления питомниками и взаимодействия с клиентами.  Пользователи могут вести учет животных, включая родословные, записи о здоровье и вакцинации.  Система позволяет управлять продажами,  записывать информацию о клиентах и их питомцах, а также планировать вязки и следить за потомством.',
+				'Проект представляет собой веб-приложение для заводчиков животных, предназначенное для управления питомниками и взаимодействия с клиентами.',
 			img: img4,
 			style_img: style.img_item_4,
 		},
@@ -71,7 +72,7 @@ export default function MyProjects() {
 			link: 'https://weather-dashboard-zeta-gules.vercel.app/',
 			environment: ['typescript', 'html', 'css', 'react', 'axios', 'api'],
 			description:
-				'Веб-приложение, которое показывает текущую погоду в городе, указанном пользователем. На экране отображаются результаты, включая температуру, влажность, скорость ветра и описание погодных условий. Также есть функция сброса введенных данных и повторного поиска.',
+				'Веб-приложение, которое показывает текущую погоду в городе, указанном пользователем. На экране отображаются результаты,а также есть функция сброса введенных данных.',
 			img: img5,
 			style_img: style.img_item_5,
 		},
@@ -101,11 +102,52 @@ export default function MyProjects() {
 				'pg',
 			],
 			description:
-				'Интуитивно понятный интерфейс, стильный дизайн и плавная работа приложения позволят с лёгкостью управлять своим списком добрых дел.  Добавляйте задачи, отмечат выполненные, редактируйте и удаляйте их — всё происходит в несколько кликов. Авторизованный пользователь может добавлять людей в друзья и смотреть их список добрых дел.  Система регистрации и авторизации обеспечивает безопасность Ваших данных и конфиденциальность.',
+				'Приложение позволят с лёгкостью управлять своим списком добрых дел. Авторизованный пользователь может добавлять людей в друзья и смотреть их список добрых дел.',
 			img: img7,
 			style_img: style.img_item_7,
 		},
 	]
+
+	const projectsPerPage = 3
+
+	const clonedProjects = [
+		...arr_projects.slice(-projectsPerPage),
+		...arr_projects,
+		...arr_projects.slice(0, projectsPerPage),
+	]
+	const totalProjects = clonedProjects.length
+	const totalPages = Math.ceil(arr_projects.length / projectsPerPage)
+
+	const [currentPage, setCurrentPage] = useState(projectsPerPage)
+
+	const startIndex = currentPage
+	const endIndex = startIndex + projectsPerPage
+	const currentProjects = clonedProjects.slice(startIndex, endIndex)
+
+	const handleNext = () => {
+		setCurrentPage(currentPage => {
+			const nextPage = currentPage + projectsPerPage
+			return nextPage >= totalProjects - projectsPerPage
+				? projectsPerPage
+				: nextPage
+		})
+	}
+
+	const handlePrev = () => {
+		setCurrentPage(currentPage => {
+			const prevPage = currentPage - projectsPerPage
+			return prevPage < projectsPerPage
+				? totalProjects - projectsPerPage * 2
+				: prevPage
+		})
+	}
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			handleNext()
+		}, 4000)
+		return () => clearInterval(interval)
+	}, [currentPage])
 
 	return (
 		<section id='myProjects'>
@@ -113,13 +155,16 @@ export default function MyProjects() {
 				<h2>Мои проекты</h2>
 				<p>Вот несколько проектов, которые я реализовала</p>
 				<div className={style.whirligig_projects}>
-					{arr_projects.map(el => (
+					{currentProjects.map(el => (
 						<motion.div
 							whileHover={{ scale: 1.02 }}
 							key={el.id}
 							className={style.project_item}
 						>
-							<img className={el.style_img} src={el.img} alt='img' />
+							<div style={{ height: '230px' }}>
+								<img className={el.style_img} src={el.img} alt='img' />{' '}
+							</div>
+
 							<div className={style.environment}>
 								{el.environment.map((elem, i) => (
 									<div key={i} className={style.env_item}>
@@ -139,6 +184,22 @@ export default function MyProjects() {
 							</a>
 						</motion.div>
 					))}
+				</div>
+				<div className={style.button_container}>
+					<button
+						className={style.button}
+						onClick={handlePrev}
+						disabled={currentPage === 0}
+					>
+						Предыдущая
+					</button>
+					<button
+						className={style.button}
+						onClick={handleNext}
+						disabled={currentPage === totalPages - 1}
+					>
+						Следующая
+					</button>
 				</div>
 			</div>
 		</section>
