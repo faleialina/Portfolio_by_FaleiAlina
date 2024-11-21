@@ -1,0 +1,51 @@
+.meteor {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: yellow;
+	border-radius: 50%;
+	box-shadow: 0 0 50px rgba(255, 255, 0, 0.8);
+	transition: transform 0.1s ease;
+	pointer-events: none;
+}
+
+.meteor::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.meteor::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 60px; /* Длина хвоста */
+	height: 200px; /* Ширина хвоста */
+	background: rgba(255, 255, 0, 0.5);
+	border-radius: 5px;
+	transform: translate(-50%, -50%) rotate(45deg); /* Поворачиваем хвост */
+	animation: tail 0.5s ease-out forwards;
+	opacity: 0; /* Начальная прозрачность */
+}
+
+.meteor-move {
+	animation: tail 0.5s ease-out forwards;
+}
+
+@keyframes tail {
+	0% {
+		opacity: 1;
+		transform: translate(-50%, -50%) rotate(45deg) translateY(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -50%) rotate(45deg) translateY(-20px); /* Двигаем хвост вверх */
+	}
+}
