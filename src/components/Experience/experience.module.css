@@ -4,7 +4,7 @@
 	.title {
 		font: 800 44px Montserrat;
 		text-align: center;
-		color: #000000;
+		color: #ffff00;
 	}
 
 	p {
@@ -23,17 +23,18 @@
 		.border_item {
 			padding: 30px;
 			border: 1px solid #000000;
-			background: #ffffff;
+			background: rgb(251, 253, 255);
 			border-radius: 15px;
 			box-shadow: 4px 3px 0px 1px #000000;
 			width: 375px;
 			display: flex;
-			justify-content: center;
-			align-items: center;
 			flex-direction: column;
+			p {
+				color: #000000;
+			}
 
 			.title_item {
-				font: 700 16px Montserrat;
+				font: 700 20px Montserrat;
 				text-align: center;
 			}
 		}

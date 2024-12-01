@@ -3,7 +3,7 @@
 
 	h2 {
 		text-align: center;
-		color: #5e2f22;
+		color: #ffff00;
 	}
 
 	p {
@@ -15,6 +15,10 @@
 		flex-wrap: wrap;
 		gap: 30px;
 		justify-content: center;
+
+		p {
+			color: #000000;
+		}
 
 		.project_item {
 			position: relative;
@@ -28,6 +32,7 @@
 			gap: 10px;
 			max-width: 350px;
 			height: 600px;
+			background: rgb(251, 253, 255);
 
 			.img_item_1,
 			.img_item_2,
@@ -99,7 +104,7 @@
 				left: 0;
 				right: 0;
 				text-align: center;
-				color: #5e2f22;
+				color: #000000;
 				text-decoration: none;
 			}
 
@@ -112,22 +117,22 @@
 	.button_container {
 		display: flex;
 		justify-content: center;
-		margin: 20px 0; 
+		margin: 20px 0;
 		gap: 10px;
 	}
 
 	button {
 		border: 1px solid #000000;
 		box-shadow: 4px 3px 0px 1px #000000;
-		background: #5e2f22;
-		color: #fefefe;
+		background: #ffff00;
+		color: #0d0d0d;
 		border-radius: 15px;
 		padding: 5px 15px;
 		font: 600 14px Montserrat;
 	}
 
-		.button:hover {
-		background-color: #943922; 
+	.button:hover {
+		background-color: #939393;
 	}
 }
 

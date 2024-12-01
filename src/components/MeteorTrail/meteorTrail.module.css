@@ -2,7 +2,7 @@
 	position: absolute;
 	width: 30px;
 	height: 30px;
-	background-color: yellow;
+	background-color: #ffff00;
 	border-radius: 50%;
 	box-shadow: 0 0 50px rgba(255, 255, 0, 0.8);
 	transition: transform 0.1s ease;

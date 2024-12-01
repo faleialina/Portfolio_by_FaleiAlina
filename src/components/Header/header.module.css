@@ -34,7 +34,6 @@
 
 	.email {
 		background-image: url('./assets/email.svg');
-		
 	}
 
 	.email::after {
@@ -66,7 +65,7 @@
 	gap: 60px;
 
 	& p {
-		color: #000000;
+		color: #ffff00;
 		cursor: pointer;
 	}
 }

@@ -6,7 +6,7 @@
 
 body {
 	max-width: 1335px;
-	background: #333130;
+	background: #242424;
 	overflow-x: hidden;
 	margin: auto;
 	padding: 0 30px;
@@ -19,7 +19,7 @@ a {
 p,
 ul li {
 	font: 400 18px Montserrat;
-	color: #000000;
+	color: #f0ecec;
 }
 
 h1 {
@@ -28,6 +28,6 @@ h1 {
 
 h2 {
 	font: 800 80px Montserrat;
-	color: #5e2f22;
+	color: #ffff00;
 	text-align: center;
 }
